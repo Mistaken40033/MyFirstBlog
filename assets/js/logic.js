@@ -1,20 +1,37 @@
-const firstNameInput = document.querySelector('#first-name');
-const lastNameInput = document.querySelector('#last-name');
-const emailInput = document.querySelector('#email');
-const passwordInput = document.querySelector('#password');
-const signUpButton = document.querySelector('#sign-up');
+const username = document.getElementById('id');
+const title = document.getElementById('owner');
+const content = document.getElementById('information');
+const submit = document.getElementById('enter');
 
-signUpButton.addEventListener('click', function (event) {
-  event.preventDefault();
+function saveInformation() {
+  const info = {
+    username: id.value,
+    title: owner.value.trim,
+    content: information.value.trim(),
+ };
+  localStorage.setItem('id', 'owner', 'information', JSON.stringify(info));
+}
 
-  // TODO: Create user object from submission
-  const userInfo = {
-    firstNameInput: first.value,
-    lastNameInput: last.value,
-    emailInput: emailInput,
-    passwordInput:passwordInput,value.trim(),
-  };
+function renderInfo(){
+  const info = JSON.parse(localStorage.getItem('info'));
+  
+  if (info !== null) {
+    document.getElementById('id').innerHTML = info.username;
+    document.getElementById('owner').innerHTML = info.title;
+    document.getElementById('information').innerHTML = info.content;
+  }
+}
 
-  // TODO: Set new submission to local storage
-  localStorage.setItem('userInfo',JSON.stringify)
-});
+  submit.addEventListener('click', function(event) {
+      event.preventDefault();
+  });
+
+  function init() {
+    renderInfo();
+  }
+  init();
+
+
+// //Get info on HTML
+// //Store the data UserName, Title, Content
+// //Through "submit"

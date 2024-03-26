@@ -12,3 +12,7 @@ toggleSwitch.addEventListener('click', function() {
     container.setAttribute('class','dark');
   }
 });
+//Read Local Storage
+//Loop through the blogs, populating in the contatiner area
+
+
