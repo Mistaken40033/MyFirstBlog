@@ -10,13 +10,13 @@ function saveInformation() {
     title: title.value,
     content: content.value,
  };
-
-dataArray.push(info)
+let dataArray = [];
+dataArray.push(info);
   localStorage.setItem("data", JSON.stringify(dataArray));
 }
 // "owner", "information"
 function renderInfo(){
-  const info = JSON.parse(localStorage.getItem('data'));
+  const info = JSON.parse(localStorage.getItem('info'));
   
   if (info !== null) {
     document.getElementById('id').innerHTML = info.username;
