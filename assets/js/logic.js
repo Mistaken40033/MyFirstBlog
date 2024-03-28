@@ -1,29 +1,34 @@
-const username = document.getElementById('id');
-const title = document.getElementById('owner');
-const content = document.getElementById('information');
+const username = document.getElementById('username');
+const title = document.getElementById('title');
+const content = document.getElementById('content');
 const submit = document.getElementById('enter');
+const dataArray = JSON.parse(localStorage.getItem('data'));
 
 function saveInformation() {
   const info = {
-    username: id.value,
-    title: owner.value.trim,
-    content: information.value.trim(),
+    username: username.value,
+    title: title.value,
+    content: content.value,
  };
-  localStorage.setItem('id', 'owner', 'information', JSON.stringify(info));
-}
 
+dataArray.push(info)
+  localStorage.setItem("data", JSON.stringify(dataArray));
+}
+// "owner", "information"
 function renderInfo(){
-  const info = JSON.parse(localStorage.getItem('info'));
+  const info = JSON.parse(localStorage.getItem('data'));
   
   if (info !== null) {
     document.getElementById('id').innerHTML = info.username;
-    document.getElementById('owner').innerHTML = info.title;
-    document.getElementById('information').innerHTML = info.content;
+    // document.getElementById('owner').innerHTML = info.title;
+    // document.getElementById('information').innerHTML = info.content;
   }
 }
 
   submit.addEventListener('click', function(event) {
-      event.preventDefault();
+      event.preventDefault(); 
+      saveInformation()
+      location.href='blog.html'
   });
 
   function init() {

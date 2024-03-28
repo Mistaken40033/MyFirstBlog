@@ -135,23 +135,17 @@ form{
     width: 50%;
     /* display: inline-block; */
     margin: 5%;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-section {
-    width: 5%;
-    height: 5%;
-    padding: 5%;
-    /* border: 5px rgb(181, 16, 16); */
-    margin: 0%;
-    unicode-bidi: isolate;
-}
 
 input{
     border-width: thick;
     width: 80%;
     height: 100%;
-    /* font-size: 700; */
-    /* padding: 10%; */
+    /* cursor: pointer; */
+    /* padding: 5%; */
     /* margin: 10px 5px 10px 5px; */
 }
 

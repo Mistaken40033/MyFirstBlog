@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,44 +11,46 @@
 
 <body>
     <main>
-    <div class="content-wrapper">
-        <!-- <h1>My First Blog</h1> -->
-        <div class ="theme-switch-wrapper" p id ="dark-mode">
-            <p id= "light-mode"></p>
-        <p id ="dark-mode"></p>
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <div class="slider round" button id="toggleSwitch">  
-                </div>  
-            </label>
-        </div>
-    </main>   
+        <div class="content-wrapper">
+            <!-- <h1>My First Blog</h1> -->
+            <div class="theme-switch-wrapper" p id="dark-mode">
+                <p id="light-mode"></p>
+                <p id="dark-mode"></p>
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <div class="slider round" button id="toggleSwitch">
+                    </div>
+                </label>
+            </div>
+    </main>
 
     <!-- //*Trying to find where to place h1// -->
-        
-        <b><h1>My First Blog</h1></b></a>
-        <i><h2>What's in your Mind?</h2></i>
-        <script src="assets/js/form.js"></script>
-        <script src="assets/js/logic.js"></script>
+
+    <b>
+        <h1>My First Blog</h1>
+    </b></a>
+    <i>
+        <h2>What's in your Mind?</h2>
+    </i>
+
 
     <form action="blog.html">
         <label for="username">Username:</label><br>
-        <input type="text" id="username"><br><br>
+        <input type="text" name="username" id="username"><br>
 
-        <label for="title">Title:</label><br>
-        <input type="text" id="title" ><br><br>
+        <label for="title">Blog Name:</label><br>
+        <input type="text" name="title" id="title"><br>
 
-        <label for="content">Content:</label><br>
-        <input type="content" id="content"><br><br>
-        
-        <a href="blog.html" button id="submit">SUBMIT</button></a><br>
-      </form>     
-      
+        <label for="content">Tell Me About Yourself:</label><br>
+        <input type="text" name="content" id="content"><br>
+        <input id="enter" value="SUBMIT"><br>
+       
+    </form>
+    </div>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/js/form.js">
-    
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/logic.js"></script>
     <!-- <link rel="stylesheet" href="assets/style.css/form.css" -->
 </body>
+
 </html>
-        
-    

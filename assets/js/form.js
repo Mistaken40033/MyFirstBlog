@@ -3,7 +3,7 @@ const body = document.body;
 
 toggleSwitch.addEventListener('click', function() {
     body.classList.toggle('dark-mode');
-    if(mode === 'dark') {
+    if (mode === 'dark') {
     mode = 'light';
     container.setAttribute ('class', 'light');
   }
